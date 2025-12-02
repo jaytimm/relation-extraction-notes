@@ -1,4 +1,4 @@
-# LSD600 Relation Extraction: Context Size Experiments
+# Some notes on relation extraction
 
 This repository contains a restructured version of the **LSD600** corpus with explicit `no_relation` labels and multiple context-size variants for studying the effect of context on relation classification performance.
 
@@ -13,9 +13,9 @@ This repository contains a restructured version of the **LSD600** corpus with ex
 
 This work builds on the original LSD600 corpus:
 
-- **Original paper**: [LSD600: The First Corpus of Biomedical Abstracts Annotated with Lifestyle–Disease Relations](https://pubmed.ncbi.nlm.nih.gov/28678823/)
+- **Original paper**: [LSD600: The First Corpus of Biomedical Abstracts Annotated with Lifestyle–Disease Relations](https://pubmed.ncbi.nlm.nih.gov/39824652/)
 - **Original corpus**: [Zenodo](https://zenodo.org/records/13952449)
-- **Original code**: [GitHub](https://github.com/EsmaeilNourani/LSF_Disease_RE)
+
 
 ### What's Modified
 
@@ -153,17 +153,6 @@ The corpus includes 8 original relation types plus `no_relation`:
 8. **no_statistical_association**: Absence of statistical association
 9. **no_relation**: No relation exists (added in this work)
 
-## Requirements
-
-### R Packages
-- `data.table` (>= 1.14.0)
-- `readr` (>= 2.0.0)
-- `tidyr` (>= 1.2.0)
-- `textpress` (for sentence tokenization)
-- `tokenizers` (for word counting)
-- `uuid` (for generating pair IDs)
-- `stringr` (for string operations)
-- `zoo` (for forward-fill operations)
 
 
 ## Context Size Experiments
