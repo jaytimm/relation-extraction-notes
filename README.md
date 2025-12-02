@@ -1,6 +1,4 @@
-# Some notes on relation extraction
-
-This repository contains a restructured version of the **LSD600** corpus with explicit `no_relation` labels and multiple context-size variants for studying the effect of context on relation classification performance.
+# Relation Extraction: Context Size Experiments
 
 ## Overview
 
