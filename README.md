@@ -91,21 +91,6 @@ This script:
   - `context_text`: The full context text
   - `masked_context_text`: Context with entities replaced by `[FACTOR]` and `[OUTCOME]`
 
-### Step 3: Quality Checks
-
-```bash
-Rscript R/03_qc_and_summaries.R
-```
-
-This script generates:
-- File availability checks
-- Relation type distributions
-- Data set splits (train/dev/test)
-- Context size statistics (word counts)
-- Entity and document statistics
-- Comparison with original metadata
-
-
 ## Output File Schema
 
 Each output CSV file contains the following columns:
@@ -139,17 +124,7 @@ Each output CSV file contains the following columns:
 
 ## Relation Types
 
-The corpus includes 8 original relation types plus `no_relation`:
-
-1. **statistical_association**: General statistical association
-2. **positive_statistical_association**: Positive effect (most common, ~32%)
-3. **causes**: Causality clearly implied
-4. **negative_statistical_association**: Negative effect
-5. **controls**: Beneficial impact of LSF on disease
-6. **prevents**: LSF hinders disease from occurring
-7. **treats**: LSF has therapeutic effect
-8. **no_statistical_association**: Absence of statistical association
-9. **no_relation**: No relation exists (added in this work)
+statistical_association, positive_statistical_association, causes, negative_statistical_association, controls, prevents, treats, no_statistical_association, no_relation
 
 
 
